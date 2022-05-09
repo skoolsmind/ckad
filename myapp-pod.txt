@@ -1,0 +1,51 @@
+Name:         myapp-pod
+Namespace:    default
+Priority:     0
+Node:         minikube/192.168.49.2
+Start Time:   Sat, 07 May 2022 18:31:36 +0300
+Labels:       app=myapp
+              type=frontend
+Annotations:  <none>
+Status:       Running
+IP:           172.17.0.4
+IPs:
+  IP:  172.17.0.4
+Containers:
+  nginx-container:
+    Container ID:   docker://751f29ee7f2af5c29dd10932eea5d8ac78fa50b2c0fd1aba97732a6df9a3e0fb
+    Image:          nginx
+    Image ID:       docker-pullable://nginx@sha256:859ab6768a6f26a79bc42b231664111317d095a4f04e4b6fe79ce37b3d199097
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Sat, 07 May 2022 18:31:46 +0300
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-7zkfw (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-7zkfw:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute for 300s
+                             node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type    Reason     Age        From               Message
+  ----    ------     ----       ----               -------
+  Normal  Scheduled  <unknown>                     Successfully assigned default/myapp-pod to minikube
+  Normal  Pulling    83s        kubelet, minikube  Pulling image "nginx"
+  Normal  Pulled     74s        kubelet, minikube  Successfully pulled image "nginx" in 9.186704759s
+  Normal  Created    74s        kubelet, minikube  Created container nginx-container
+  Normal  Started    73s        kubelet, minikube  Started container nginx-container
