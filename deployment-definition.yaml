@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp-deployment
+  labels:
+    type: backend
+    app: myapp
+    env: staging
+spec:
+  template:
+    metadata:
+      name: myapp-pod
+      labels:
+        type: backend
+        app: myapp
+        env: staging
+    spec:
+      containers:
+        - name: mysql
+          image: mysql:alpine
+  replicas: 11
+  selector:
+    matchLabels:
+      type: backend
+

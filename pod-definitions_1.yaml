@@ -76,7 +76,7 @@ metadata:
   uid: 4b76071e-4b25-41f7-8ccd-37c5b6b8b7ea
 spec:
   containers:
-  - image: nginx
+  - image: nginx123
     imagePullPolicy: Always
     name: nginx-container
     resources: {}

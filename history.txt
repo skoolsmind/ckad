@@ -1,0 +1,101 @@
+    1  :help NERDTreeMappings
+    2  vim ~/.vimrc
+    3  :NERDTree
+    4  vim ~/.vimrc
+    5  clear
+    6  :NERDTree
+    7  vim
+    8  nerdtree
+    9  cd ~
+   10  clear
+   11  cd Desktop/projects
+   12  ls
+   13  cd laravel
+   14  trtee
+   15  tree
+   16  clear
+   17  cd ../kubernetes
+   18  vim
+   19  ls
+   20  cd ckad
+   21  vim
+   22  clear
+   23  vim pod-definitions.yaml
+   24  clear
+   25  brew install k9s\n
+   26  go install std cmd
+   27  sudo go install std cmd
+   28  clear
+   29  brew install k9s\n
+   30  clear
+   31  minikube start
+   32  kubectl ge po
+   33  kubectl get po
+   34  clear
+   35  ls
+   36  kubectl create -f pod-definitions.yaml
+   37  kubectl get pods
+   38  kubectl delete pod myapp-pod
+   39  kubectl create -f pod-definitions.yaml
+   40  kubectl ge pos
+   41  kubectl get pos
+   42  kubectl get po
+   43  kubectl describe po myapp-pod > myapp-pod.txt
+   44  clear
+   45  cat ~/.bash_profile
+   46  txtfl
+   47  cat ~/.zshrc
+   48  echo " alias hello='echo hello'" >> ~/.zshrc
+   49  sudo echo " alias hello='echo hello'" >> ~/.zshrc
+   50  echo " sudo alias hello='echo hello'" >> ~/.zshrc
+   51  echo "alias hello='echo hello'" >> sudo ~/.zshrc
+   52  cat ~/.zshrc
+   53  vim ~/.zshrc
+   54  sudo vim ~/.zshrc
+   55  source ~/.zshrc
+   56  clear
+   57  hello
+   58  tree
+   59  ls
+   60  rm sudo
+   61  ls
+   62  clear
+   63  kubectl
+   64  clear
+   65  kubectl get po
+   66  kubectl get po myapp-pod.txt
+   67  kubectl get po myapp-pod
+   68  kubectl get po myapp-pod -o yaml
+   69  kubectl get po myapp-pod -o yaml > pod-definitions_1.yaml
+   70  cat pod-definitions_1.yaml
+   71  vim pod-definitions_1.yaml
+   72  clear
+   73  git status
+   74  git init
+   75  git add README.md
+   76  git add .
+   77  git commit -m "first commit"
+   78  git branch -M master
+   79  git remote add origin https://github.com/skoolsmind/ckad.git
+   80  git push -u origin master
+   81  git checkout -b core-concepts
+   82  git push -u origin core-concepts
+   83  clear
+   84  kubectl get po
+   85  vim pod-definitions_1.yaml
+   86  kubectl edit pod myapp-pod
+   87  kubectl get po
+   88  clear
+   89  kubectl get po
+   90  kubectl api-resources
+   91  kubectl get rc
+   92  clear
+   93  ls
+   94  git status
+   95  echo 1 > history.txt
+   96  cat history.txt
+   97  echo 2 > history.txt
+   98  cat history.txt
+   99  echo 1 >> history.txt
+  100  cat history.txt
+  101  man tee
