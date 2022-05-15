@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: uploader-pod
+  labels:
+    type: cronjob
+    app: myapp-pod
+spec:
+  containers:
+    - image: redis
+      name: uploader-container
+      ports:
+        - containerPort: 8080
+      envFrom:
+        - configMapRef:
+            name: themer-config
+        - configMapRef:
+            name: uploader-config
+
