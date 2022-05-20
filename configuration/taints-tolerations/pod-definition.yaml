@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp-pod
+  labels:
+    type: backend
+    app: myapp
+spec:
+  containers:
+    - name: myapp-container
+      image: redis
+  tolerations:  #tolerations is for pod
+    - key: "app"
+      operator: "Equal"
+      value: "backend"
+      effect: "NoSchedule"
